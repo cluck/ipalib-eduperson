@@ -24,6 +24,11 @@ exp.add_eduperson_pre_op = function() {
         label: 'Affiliation'
     });
     section.fields.push({
+        name: 'edupersonentitlement',
+        $type: 'multivalued',
+        label: 'Entitlement'
+    });
+    section.fields.push({
         name: 'edupersonnickname',
         $type: 'multivalued',
         label: 'Nickname'

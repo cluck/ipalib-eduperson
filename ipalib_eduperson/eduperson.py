@@ -32,6 +32,10 @@ user.user.takes_params += (
         cli_name='ep_affiliation',
         label=_('eduPerson Affiliation'),
     ),
+    Str('edupersonentitlement*',
+        cli_name='ep_entitlement',
+        label=_('eduPerson Entitlement'),
+    ),
     Str('edupersonnickname*',
         cli_name='ep_nickname',
         label=_('eduPerson Nickname'),
@@ -69,6 +73,7 @@ user.user.takes_params += (
 ATTRIBUTES = [
     'eduPersonAffiliation',
     'eduPersonAssurance',
+    'eduPersonEntitlement',
     'eduPersonNickname',
     'eduPersonOrgDN',
     'eduPersonOrgUnitDN',
